@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Frameset</title>
+	<style type="text/css"> #sty
+{ 
+	background-color: pink
+}
+</style>
+	<base target="main">
+</head>
+<body id="sty">
+<form>
+		First Number: <input type="text" id="first num">
+			</form> <br>
+	<form>
+		Second Number: <input type="text" id="second num"> <br> 
+		    <br>
+		    <br>
+
+		    <input type="button" onClick="multi()" Value="Multiply" />
+            <input type="button" onClick="divide()" Value="Divide" />
+	</form> 
+	<p> The result is : <br> 
+		<span id="result"> </span>
+	</p>
+	
+	<script>
+			function multi()
+			{
+				num1= document.getElementById("first num").value;
+				num2= document.getElementById("second num").value;
+				document.getElementById("result").innerHTML = num1*num2;
+			};
+			function divide()
+			{
+				num1= document.getElementById("first num").value;
+				num2= document.getElementById("second num").value;
+				document.getElementById("result").innerHTML = num1/num2;
+			};
+	</script>
+</body>
+</html>

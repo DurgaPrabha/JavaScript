@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Leap year </title>
+	<script>
+		function leapyear(year)
+				{
+					if(year%100 == 0)
+					{
+						return (year % 400 === 0);
+					}
+					else
+					{
+						return (year % 4 === 0);
+					}
+				}
+		console.log(leapyear(2016));
+		console.log(leapyear(2000));
+		console.log(leapyear(1996));
+		console.log(leapyear(2020));
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

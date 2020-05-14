@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Fabonacci Series </title>
+	<script type="text/javascript">
+		function fabo(n)
+		{
+    		var a = 0, b = 1, f = 1;
+    		for(var i = 1; i <= n; i++) 
+    		{
+    			document.write(f);
+       			f = a + b;
+       			a = b;
+        		b = f;
+        		document.write(' ');
+    		}
+    	}
+
+		fabo(5);
+		fabo(8);
+		fabo(10);
+		fabo(12);
+		fabo(15);
+				
+	</script>
+</head>
+<body>
+
+</body>
+</html>

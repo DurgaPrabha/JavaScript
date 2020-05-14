@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Maximum and Minimum of an array </title>
+	<script type="text/javascript">
+		function findMinMax()
+		{ 
+            array1 = [50, 60, 20, 10, 40]; 
+           	var largest = array1[0];
+			var smallest = array1[0];
+			for (var i = 0; i < array1.length; i++)
+			{
+    			var temp = array1[i];
+    			if (temp > largest)
+    				{
+        				largest = array1[i];
+    				}
+    			if (temp < smallest)
+    				{
+        				smallest = array1[i];
+    				}
+    		}
+    		console.log(largest);
+			console.log(smallest)
+		}
+		findMinMax();
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

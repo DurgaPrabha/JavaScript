@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Armstrong Number </title>
+	<script type="text/javascript">
+		function armstr(n)
+			{
+				var arm=0,a,b,c,d,num;
+				num=n;
+
+				temp=num;	
+				while(temp>0)
+					{
+						a=temp%10;
+						temp=parseInt(temp/10);
+						arm=arm+a*a*a;
+					}
+				if(arm==num)
+					{
+						console.log("Armstrong number");
+					}
+				else
+					{
+						console.log("Not an armstrong number");
+					}
+			}
+			armstr(153);
+			armstr(157);
+			armstr(371);
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
